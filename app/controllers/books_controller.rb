@@ -28,7 +28,7 @@ class BooksController < ApplicationController
 	end
 
 	def update
-		@book = Book.update(book_params)
+		@book = Book.find(params[:id])
 		if @book.update(book_params)
 			redirect_to action: 'index', notice: "Book was successfully updated."
 		else
