@@ -2,6 +2,9 @@
 
 <ul>
 	<% @books.each do |book| %>
-	<li><%= book.title %>, <%= book.author %></li>
+		<li>
+			<%= link_to book.title, book %> by <%= book.author %>
+		</li>
+	<!-- 	<li><%= link_to book.id %></li> -->
 	<% end %>
 </ul>

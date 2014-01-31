@@ -8,7 +8,4 @@ class Book
 
   validates :title, presence: true
   validates :author, presence: true
-  validates :year, numericality: true
-  validates :isbn, presence: true, uniqueness: true
-  validates :genre, presence: true
 end
